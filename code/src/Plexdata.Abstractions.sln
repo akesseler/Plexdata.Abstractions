@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plexdata.AspNetCore.Http", "Plexdata.AspNetCore.Http\Plexdata.AspNetCore.Http.csproj", "{990C42A4-7844-4755-903D-4F42961328FB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "General", "General", "{A0819B92-EBFE-4EF2-9028-24ECF833DC63}"
+	ProjectSection(SolutionItems) = preProject
+		clean.cmd = clean.cmd
+		HISTORY.md = HISTORY.md
+		post-build.cmd = post-build.cmd
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{990C42A4-7844-4755-903D-4F42961328FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{990C42A4-7844-4755-903D-4F42961328FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{990C42A4-7844-4755-903D-4F42961328FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{990C42A4-7844-4755-903D-4F42961328FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DB687D8C-4912-47C7-8CC5-629BD58133D5}
+	EndGlobalSection
+EndGlobal

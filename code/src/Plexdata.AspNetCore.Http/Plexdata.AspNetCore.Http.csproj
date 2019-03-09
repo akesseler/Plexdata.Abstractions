@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <RootNamespace>Plexdata.AspNetCore.Http</RootNamespace>
+    <AssemblyName>Plexdata.AspNetCore.Http</AssemblyName>
+    <Authors>plexdata.de</Authors>
+    <Copyright>Copyright © 2019 - plexdata.de</Copyright>
+    <Description>This .NET Core library provides wrapper interfaces for the classes HttpContext, HttpRequest and HttpResponse.</Description>
+    <PackageReleaseNotes>Initial draft and first release.</PackageReleaseNotes>
+    <PackageTags>HTTP context request response testing wrapper interfaces core ASP</PackageTags>
+    <PackageLicenseUrl>https://github.com/akesseler/Plexdata.Abstractions/blob/master/LICENSE.md</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/akesseler/Plexdata.Abstractions</PackageProjectUrl>
+    <PackageIconUrl>https://github.com/akesseler/Plexdata.Abstractions/blob/master/icon.png?raw=true</PackageIconUrl>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netcoreapp2.1\Plexdata.AspNetCore.Http.xml</DocumentationFile>
+    <OutputPath>bin\Release</OutputPath>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningsAsErrors />
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>bin\Debug</OutputPath>
+    <DocumentationFile>bin\Debug\netcoreapp2.1\Plexdata.AspNetCore.Http.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.1.1" />
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="&quot;$(SolutionDir)post-build.cmd&quot; &quot;$(SolutionDir)..\hlp\&quot; $(ConfigurationName) &quot;$(SolutionDir)..\hlp\help\*.chm&quot; $(TargetDir) &quot;..\hlp\Plexdata.AspNetCore.Http.help.shfbproj&quot;&#xD;&#xA;" />
+  </Target>
+
+</Project>
