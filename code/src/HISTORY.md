@@ -1,9 +1,8 @@
 
-# To be done!
 
 
 **1.0.0.0**
 
 - Initial draft.
-- Published on [https://github.com/akesseler/Plexdata.LogWriter](https://github.com/akesseler/Plexdata.LogWriter).
+- Published on [https://github.com/akesseler/Plexdata.Abstractions](https://github.com/akesseler/Plexdata.Abstractions).
 - Package release on nuget.org
